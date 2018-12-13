@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5ED9C21656F941EC02B030 /* libPods-VideoTransitionDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5B92468241A9471EC2B3DA /* libPods-VideoTransitionDemo.a */; };
+		166AF86221BE5ABF004A1E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF86121BE5ABF004A1E15 /* AppDelegate.m */; };
+		166AF86521BE5ABF004A1E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF86421BE5ABF004A1E15 /* ViewController.m */; };
+		166AF86821BE5ABF004A1E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166AF86621BE5ABF004A1E15 /* Main.storyboard */; };
+		166AF86A21BE5AC1004A1E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166AF86921BE5AC1004A1E15 /* Assets.xcassets */; };
+		166AF86D21BE5AC1004A1E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166AF86B21BE5AC1004A1E15 /* LaunchScreen.storyboard */; };
+		166AF87021BE5AC1004A1E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF86F21BE5AC1004A1E15 /* main.m */; };
+		166AF87921BE5B93004A1E15 /* YFPlayerTransitionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF87821BE5B93004A1E15 /* YFPlayerTransitionParameter.m */; };
+		166AF91F21BE6C6A004A1E15 /* YFPlayerPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF91E21BE6C6A004A1E15 /* YFPlayerPushTransition.m */; };
+		166AF92221BE7009004A1E15 /* YFPlayerPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF92121BE7009004A1E15 /* YFPlayerPopTransition.m */; };
+		166AF92921BE78A2004A1E15 /* ZFAutoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF92721BE78A2004A1E15 /* ZFAutoPlayerViewController.m */; };
+		166AF92C21BE78F2004A1E15 /* YFPlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF92B21BE78F2004A1E15 /* YFPlayerDetailsViewController.m */; };
+		166AF92F21BE7A7C004A1E15 /* ZFTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF92D21BE7A7C004A1E15 /* ZFTableData.m */; };
+		166AF93221BE7A8C004A1E15 /* ZFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF93121BE7A8C004A1E15 /* ZFTableViewCell.m */; };
+		166AF93521BE7AB0004A1E15 /* ZFTableViewCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF93421BE7AB0004A1E15 /* ZFTableViewCellLayout.m */; };
+		166AF93821BE7ACA004A1E15 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF93721BE7ACA004A1E15 /* NSString+Size.m */; };
+		166AF93E21BE7BB7004A1E15 /* ZFPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF93C21BE7BB7004A1E15 /* ZFPlayerDetailViewController.m */; };
+		166AF94121BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF94021BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.m */; };
+		166AF94321BE8AA6004A1E15 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 166AF94221BE8AA6004A1E15 /* data.json */; };
+		166AF94621BF9809004A1E15 /* YFTimeLinePlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166AF94521BF9809004A1E15 /* YFTimeLinePlayerControlView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		166AF85D21BE5ABF004A1E15 /* VideoTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166AF86021BE5ABF004A1E15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		166AF86121BE5ABF004A1E15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		166AF86321BE5ABF004A1E15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		166AF86421BE5ABF004A1E15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		166AF86721BE5ABF004A1E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		166AF86921BE5AC1004A1E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166AF86C21BE5AC1004A1E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		166AF86E21BE5AC1004A1E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166AF86F21BE5AC1004A1E15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		166AF87721BE5B93004A1E15 /* YFPlayerTransitionParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPlayerTransitionParameter.h; sourceTree = "<group>"; };
+		166AF87821BE5B93004A1E15 /* YFPlayerTransitionParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPlayerTransitionParameter.m; sourceTree = "<group>"; };
+		166AF8CC21BE6175004A1E15 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		166AF8CE21BE61AC004A1E15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		166AF91B21BE6594004A1E15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		166AF91D21BE6C6A004A1E15 /* YFPlayerPushTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPlayerPushTransition.h; sourceTree = "<group>"; };
+		166AF91E21BE6C6A004A1E15 /* YFPlayerPushTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPlayerPushTransition.m; sourceTree = "<group>"; };
+		166AF92021BE7009004A1E15 /* YFPlayerPopTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPlayerPopTransition.h; sourceTree = "<group>"; };
+		166AF92121BE7009004A1E15 /* YFPlayerPopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPlayerPopTransition.m; sourceTree = "<group>"; };
+		166AF92721BE78A2004A1E15 /* ZFAutoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFAutoPlayerViewController.m; sourceTree = "<group>"; };
+		166AF92821BE78A2004A1E15 /* ZFAutoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFAutoPlayerViewController.h; sourceTree = "<group>"; };
+		166AF92A21BE78F2004A1E15 /* YFPlayerDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPlayerDetailsViewController.h; sourceTree = "<group>"; };
+		166AF92B21BE78F2004A1E15 /* YFPlayerDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPlayerDetailsViewController.m; sourceTree = "<group>"; };
+		166AF92D21BE7A7C004A1E15 /* ZFTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTableData.m; sourceTree = "<group>"; };
+		166AF92E21BE7A7C004A1E15 /* ZFTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTableData.h; sourceTree = "<group>"; };
+		166AF93021BE7A8C004A1E15 /* ZFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTableViewCell.h; sourceTree = "<group>"; };
+		166AF93121BE7A8C004A1E15 /* ZFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTableViewCell.m; sourceTree = "<group>"; };
+		166AF93321BE7AB0004A1E15 /* ZFTableViewCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTableViewCellLayout.h; sourceTree = "<group>"; };
+		166AF93421BE7AB0004A1E15 /* ZFTableViewCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTableViewCellLayout.m; sourceTree = "<group>"; };
+		166AF93621BE7ACA004A1E15 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		166AF93721BE7ACA004A1E15 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		166AF93C21BE7BB7004A1E15 /* ZFPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerDetailViewController.m; sourceTree = "<group>"; };
+		166AF93D21BE7BB7004A1E15 /* ZFPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerDetailViewController.h; sourceTree = "<group>"; };
+		166AF93F21BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPlayerInteractiveAnimatedTransition.h; sourceTree = "<group>"; };
+		166AF94021BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPlayerInteractiveAnimatedTransition.m; sourceTree = "<group>"; };
+		166AF94221BE8AA6004A1E15 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		166AF94421BF9808004A1E15 /* YFTimeLinePlayerControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFTimeLinePlayerControlView.h; sourceTree = "<group>"; };
+		166AF94521BF9809004A1E15 /* YFTimeLinePlayerControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFTimeLinePlayerControlView.m; sourceTree = "<group>"; };
+		41557114BC26B4C09BE62408 /* Pods-VideoTransitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoTransitionDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoTransitionDemo/Pods-VideoTransitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5B92468241A9471EC2B3DA /* libPods-VideoTransitionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoTransitionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05118A627A1AEA4C6EC0EFE /* Pods-VideoTransitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoTransitionDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoTransitionDemo/Pods-VideoTransitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		166AF85A21BE5ABF004A1E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5ED9C21656F941EC02B030 /* libPods-VideoTransitionDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		166AF85421BE5ABF004A1E15 = {
+			isa = PBXGroup;
+			children = (
+				166AF85F21BE5ABF004A1E15 /* VideoTransitionDemo */,
+				166AF85E21BE5ABF004A1E15 /* Products */,
+				166AF8CB21BE6175004A1E15 /* Frameworks */,
+				9B1C55C1DF3882CC768BE7E0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		166AF85E21BE5ABF004A1E15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				166AF85D21BE5ABF004A1E15 /* VideoTransitionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		166AF85F21BE5ABF004A1E15 /* VideoTransitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				166AF86021BE5ABF004A1E15 /* AppDelegate.h */,
+				166AF86121BE5ABF004A1E15 /* AppDelegate.m */,
+				166AF92621BE75FA004A1E15 /* ZFPlayerViewController */,
+				166AF86321BE5ABF004A1E15 /* ViewController.h */,
+				166AF86421BE5ABF004A1E15 /* ViewController.m */,
+				166AF92A21BE78F2004A1E15 /* YFPlayerDetailsViewController.h */,
+				166AF92B21BE78F2004A1E15 /* YFPlayerDetailsViewController.m */,
+				166AF87621BE5B72004A1E15 /* YFPlayerTransition */,
+				166AF86621BE5ABF004A1E15 /* Main.storyboard */,
+				166AF86921BE5AC1004A1E15 /* Assets.xcassets */,
+				166AF86B21BE5AC1004A1E15 /* LaunchScreen.storyboard */,
+				166AF86E21BE5AC1004A1E15 /* Info.plist */,
+				166AF86F21BE5AC1004A1E15 /* main.m */,
+				166AF8CE21BE61AC004A1E15 /* PrefixHeader.pch */,
+			);
+			path = VideoTransitionDemo;
+			sourceTree = "<group>";
+		};
+		166AF87621BE5B72004A1E15 /* YFPlayerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				166AF87721BE5B93004A1E15 /* YFPlayerTransitionParameter.h */,
+				166AF87821BE5B93004A1E15 /* YFPlayerTransitionParameter.m */,
+				166AF91D21BE6C6A004A1E15 /* YFPlayerPushTransition.h */,
+				166AF91E21BE6C6A004A1E15 /* YFPlayerPushTransition.m */,
+				166AF92021BE7009004A1E15 /* YFPlayerPopTransition.h */,
+				166AF92121BE7009004A1E15 /* YFPlayerPopTransition.m */,
+				166AF93F21BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.h */,
+				166AF94021BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.m */,
+			);
+			path = YFPlayerTransition;
+			sourceTree = "<group>";
+		};
+		166AF8CB21BE6175004A1E15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166AF91B21BE6594004A1E15 /* UIKit.framework */,
+				166AF8CC21BE6175004A1E15 /* AudioToolbox.framework */,
+				6B5B92468241A9471EC2B3DA /* libPods-VideoTransitionDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		166AF92621BE75FA004A1E15 /* ZFPlayerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				166AF94221BE8AA6004A1E15 /* data.json */,
+				166AF92E21BE7A7C004A1E15 /* ZFTableData.h */,
+				166AF92D21BE7A7C004A1E15 /* ZFTableData.m */,
+				166AF93621BE7ACA004A1E15 /* NSString+Size.h */,
+				166AF93721BE7ACA004A1E15 /* NSString+Size.m */,
+				166AF93321BE7AB0004A1E15 /* ZFTableViewCellLayout.h */,
+				166AF93421BE7AB0004A1E15 /* ZFTableViewCellLayout.m */,
+				166AF93021BE7A8C004A1E15 /* ZFTableViewCell.h */,
+				166AF93121BE7A8C004A1E15 /* ZFTableViewCell.m */,
+				166AF92821BE78A2004A1E15 /* ZFAutoPlayerViewController.h */,
+				166AF92721BE78A2004A1E15 /* ZFAutoPlayerViewController.m */,
+				166AF93D21BE7BB7004A1E15 /* ZFPlayerDetailViewController.h */,
+				166AF93C21BE7BB7004A1E15 /* ZFPlayerDetailViewController.m */,
+				166AF94421BF9808004A1E15 /* YFTimeLinePlayerControlView.h */,
+				166AF94521BF9809004A1E15 /* YFTimeLinePlayerControlView.m */,
+			);
+			path = ZFPlayerViewController;
+			sourceTree = "<group>";
+		};
+		9B1C55C1DF3882CC768BE7E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41557114BC26B4C09BE62408 /* Pods-VideoTransitionDemo.debug.xcconfig */,
+				C05118A627A1AEA4C6EC0EFE /* Pods-VideoTransitionDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		166AF85C21BE5ABF004A1E15 /* VideoTransitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166AF87321BE5AC1004A1E15 /* Build configuration list for PBXNativeTarget "VideoTransitionDemo" */;
+			buildPhases = (
+				8CB008B2E173A361B95D02C1 /* [CP] Check Pods Manifest.lock */,
+				166AF85921BE5ABF004A1E15 /* Sources */,
+				166AF85A21BE5ABF004A1E15 /* Frameworks */,
+				166AF85B21BE5ABF004A1E15 /* Resources */,
+				8FD12A7A64703968A37A5913 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoTransitionDemo;
+			productName = VideoTransitionDemo;
+			productReference = 166AF85D21BE5ABF004A1E15 /* VideoTransitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		166AF85521BE5ABF004A1E15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = YaFei;
+				TargetAttributes = {
+					166AF85C21BE5ABF004A1E15 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 166AF85821BE5ABF004A1E15 /* Build configuration list for PBXProject "VideoTransitionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 166AF85421BE5ABF004A1E15;
+			productRefGroup = 166AF85E21BE5ABF004A1E15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				166AF85C21BE5ABF004A1E15 /* VideoTransitionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		166AF85B21BE5ABF004A1E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166AF86D21BE5AC1004A1E15 /* LaunchScreen.storyboard in Resources */,
+				166AF86A21BE5AC1004A1E15 /* Assets.xcassets in Resources */,
+				166AF86821BE5ABF004A1E15 /* Main.storyboard in Resources */,
+				166AF94321BE8AA6004A1E15 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CB008B2E173A361B95D02C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoTransitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD12A7A64703968A37A5913 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VideoTransitionDemo/Pods-VideoTransitionDemo-resources.sh",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoTransitionDemo/Pods-VideoTransitionDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		166AF85921BE5ABF004A1E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166AF87921BE5B93004A1E15 /* YFPlayerTransitionParameter.m in Sources */,
+				166AF92921BE78A2004A1E15 /* ZFAutoPlayerViewController.m in Sources */,
+				166AF93E21BE7BB7004A1E15 /* ZFPlayerDetailViewController.m in Sources */,
+				166AF86521BE5ABF004A1E15 /* ViewController.m in Sources */,
+				166AF94621BF9809004A1E15 /* YFTimeLinePlayerControlView.m in Sources */,
+				166AF92C21BE78F2004A1E15 /* YFPlayerDetailsViewController.m in Sources */,
+				166AF93821BE7ACA004A1E15 /* NSString+Size.m in Sources */,
+				166AF91F21BE6C6A004A1E15 /* YFPlayerPushTransition.m in Sources */,
+				166AF92F21BE7A7C004A1E15 /* ZFTableData.m in Sources */,
+				166AF87021BE5AC1004A1E15 /* main.m in Sources */,
+				166AF93521BE7AB0004A1E15 /* ZFTableViewCellLayout.m in Sources */,
+				166AF93221BE7A8C004A1E15 /* ZFTableViewCell.m in Sources */,
+				166AF92221BE7009004A1E15 /* YFPlayerPopTransition.m in Sources */,
+				166AF94121BE8776004A1E15 /* YFPlayerInteractiveAnimatedTransition.m in Sources */,
+				166AF86221BE5ABF004A1E15 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		166AF86621BE5ABF004A1E15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166AF86721BE5ABF004A1E15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		166AF86B21BE5AC1004A1E15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166AF86C21BE5AC1004A1E15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		166AF87121BE5AC1004A1E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		166AF87221BE5AC1004A1E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		166AF87421BE5AC1004A1E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41557114BC26B4C09BE62408 /* Pods-VideoTransitionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWR35KB243;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = VideoTransitionDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = VideoTransitionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yafei.VideoTransitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		166AF87521BE5AC1004A1E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C05118A627A1AEA4C6EC0EFE /* Pods-VideoTransitionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWR35KB243;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = VideoTransitionDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = VideoTransitionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yafei.VideoTransitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		166AF85821BE5ABF004A1E15 /* Build configuration list for PBXProject "VideoTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166AF87121BE5AC1004A1E15 /* Debug */,
+				166AF87221BE5AC1004A1E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		166AF87321BE5AC1004A1E15 /* Build configuration list for PBXNativeTarget "VideoTransitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166AF87421BE5AC1004A1E15 /* Debug */,
+				166AF87521BE5AC1004A1E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 166AF85521BE5ABF004A1E15 /* Project object */;
+}

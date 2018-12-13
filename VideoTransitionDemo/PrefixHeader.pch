@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  VideoTransitionDemo
+//
+//  Created by YaFei on 2018/12/10.
+//  Copyright © 2018 YaFei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define ScreenWidth         [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight        [[UIScreen mainScreen] bounds].size.height
+#import "ZFPlayer.h"
+#import "ZFAVPlayerManager.h"
+#import "ZFPlayerControlView.h"
+
+#endif /* PrefixHeader_pch */
