@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "YFPlayerDetailsViewController.h"
 #import "YFPlayerInteractiveAnimatedTransition.h"
-
+#import "YFTimeLinePlayerControlView.h"
 
 @interface ViewController ()<YFTimeLinePlayerControlDelegate>
 @property (nonatomic, strong) YFPlayerInteractiveAnimatedTransition *animatedTransition;
@@ -102,9 +102,15 @@
 
 #pragma mark - 结束转场
 - (void)completeTransition:(NSNotification *)notify{
+    
+    
+    ZFPlayerControlView *controlView = (ZFPlayerControlView *)self.player.controlView;
+    controlView.coverImageView.hidden = NO;
+    
     NSInteger indexRow = self.readyPlayIndex;
     ZFTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:indexRow inSection:0]];
     [self.player updateNoramlPlayerWithContainerView:cell.coverImageView];
+    self.player.currentPlayerManager.view.backgroundColor = [UIColor blackColor];
     self.controlView.delegate = self;
     if (self.animatedTransition.transitionParameter.transitionType != YFTransitionTypeVideo) {
         [self.player stop];

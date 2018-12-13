@@ -44,7 +44,7 @@
         _player = self.animatedTransition.transitionParameter.player;
         [self.animatedTransition.transitionParameter.player updateNoramlPlayerWithContainerView:self.myContentView];
         YFTimeLinePlayerControlView *controlView =  (YFTimeLinePlayerControlView *)self.player.controlView;
-         controlView.delegate = self;
+        controlView.delegate = self;
     }else{
         self.playerManager = [[ZFAVPlayerManager alloc] init];
         self.player = [ZFPlayerController playerWithPlayerManager:self.playerManager containerView:self.myContentView];
@@ -58,9 +58,9 @@
         };
         self.playerManager.assetURL = [NSURL URLWithString:self.animatedTransition.transitionParameter.videoUrlString];
         YFTimeLinePlayerControlView *controlView =  self.controlView;
-//        controlView.coverBgViewFrame = CGRectMake(0, (self.view.window.frame.size.height-self.animatedTransition.transitionParameter.firstTransFrame.size.height)/2, self.animatedTransition.transitionParameter.firstTransFrame.size.width, self.animatedTransition.transitionParameter.firstTransFrame.size.height);
         [controlView showTitle:@"视频标题" coverURLString:self.animatedTransition.transitionParameter.videoCoverUrlString fullScreenMode:ZFFullScreenModeLandscape];
         controlView.delegate = self;
+        controlView.coverImageView.hidden = YES;
         self.animatedTransition.transitionParameter.player = self.player;
     }
 }

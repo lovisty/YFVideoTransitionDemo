@@ -23,9 +23,6 @@
     return self;
 }
 
-- (void)gestureDoubleTapped:(ZFPlayerGestureControl *)gestureControl {
-    
-}
 
 - (void)gestureSingleTapped:(ZFPlayerGestureControl *)gestureControl {
     if (!self.player) return;

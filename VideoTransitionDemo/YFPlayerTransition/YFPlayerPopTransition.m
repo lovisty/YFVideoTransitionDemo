@@ -7,6 +7,7 @@
 //
 
 #import "YFPlayerPopTransition.h"
+#import "YFTimeLinePlayerControlView.h"
 
 @implementation YFPlayerPopTransition
 
@@ -36,6 +37,7 @@
     [self.transitionParameter.player updateNoramlPlayerWithContainerView:transitionView];
     [containerView addSubview:transitionView];
     
+    self.transitionParameter.player.currentPlayerManager.view.backgroundColor = [UIColor clearColor];
     //动画
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.transitionParameter.player.controlView.hidden = YES;

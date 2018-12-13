@@ -7,9 +7,13 @@
 //
 
 #import "YFPlayerPushTransition.h"
+#import "YFTimeLinePlayerControlView.h"
 
 @implementation YFPlayerPushTransition
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
+//    if (self.transitionParameter.transitionType == YFTransitionTypeVideo){
+//        return 0.35
+//    }
     return 0.35;
 }
 
@@ -31,13 +35,18 @@
     
     UIImageView *coverImageView = nil;
     if (self.transitionParameter.transitionType == YFTransitionTypeVideo){
+        ZFPlayerControlView *controlView = (ZFPlayerControlView *)self.transitionParameter.player.controlView;
+        controlView.coverImageView.hidden = YES;
         [self.transitionParameter.player updateNoramlPlayerWithContainerView:transitionView];
     }else{
         coverImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.transitionParameter.firstTransFrame.size.width, self.transitionParameter.firstTransFrame.size.height)];
         coverImageView.image = self.transitionParameter.videoCoverImage;
+        coverImageView.contentMode = UIViewContentModeScaleAspectFill;
         [transitionView addSubview:coverImageView];
     }
     [containerView addSubview:transitionView];
+    
+    self.transitionParameter.player.currentPlayerManager.view.backgroundColor = [UIColor clearColor];
     //动画
     @weakify(self)
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -46,6 +55,7 @@
         if (coverImageView) {
             coverImageView.frame = CGRectMake(0, _y, self.transitionParameter.firstTransFrame.size.width, self.transitionParameter.firstTransFrame.size.height);
         }
+
         //转场开始隐藏cell上的视图 隐藏控制层
         self.transitionParameter.playerContentView.hidden = YES;
         self.transitionParameter.player.controlView.hidden = YES;
